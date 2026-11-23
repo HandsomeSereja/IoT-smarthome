@@ -1,0 +1,1 @@
+source "$BR2_EXTERNAL_SMARTHOME_PATH/package/smarthome/Config.in"

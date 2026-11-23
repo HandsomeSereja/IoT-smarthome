@@ -1,0 +1,17 @@
+#!/bin/sh
+case "$1" in
+ start)
+  echo "Starting smmarthome..."
+  /usr/bin/smarthome &
+  ;;
+ stop)
+  echo "Stopping smarthome..."
+  killall smarthome
+  ;;
+ restart)
+  $0 stop
+  sleep 1
+  $0 start
+  ;;
+esac
+exit 0
